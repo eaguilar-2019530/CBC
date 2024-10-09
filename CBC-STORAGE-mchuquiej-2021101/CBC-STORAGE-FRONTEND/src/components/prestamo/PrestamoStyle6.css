@@ -1,0 +1,111 @@
+.tituloPrestamo {
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+.contenedorPrincipalP {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    flex-direction: column;  /* Alinea los elementos en columna si son varios */
+}
+
+.contenedorPrestamo {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: center; /* Centra los hijos horizontalmente */
+    align-items: center;     /* Centra los hijos verticalmente */
+    flex-direction: column;  /* Alinea los hijos en columna */
+}
+
+
+.espacioAbajoI {
+    margin-bottom: 10px;
+}
+
+.espacioAbajoB {
+    margin-bottom: 15px;
+}
+
+/*---------- ESTILOS DE LOS BOTONES -----------*/
+.botonUnoP {
+    --bg: #27ae60;
+    --text-color: #fff;
+    position: relative;
+    width: 150px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #1e8449 0px 7px 2px, #000 0px 8px 5px;
+    margin-right: 35px;
+}
+
+.botonUnoP:hover {
+    opacity: 1;
+}
+
+.botonUnoP:active {
+    top: 4px;
+    box-shadow: #1e8449 0px 3px 2px, #000 0px 3px 5px;
+}
+
+/*---- Boton Dos ----*/
+.botonDosP {
+    --bg: #e74c3c;
+    --text-color: #fff;
+    position: relative;
+    width: 150px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+}
+
+.botonDosP:hover {
+    opacity: 1;
+}
+
+.botonDosP:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    margin-top: 20px;
+    /* Espacio opcional entre el contenedor y los botones */
+}
+
+.celdaIconosP {
+        text-align: center;
+}

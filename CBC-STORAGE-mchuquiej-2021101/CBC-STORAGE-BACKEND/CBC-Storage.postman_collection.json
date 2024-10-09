@@ -1,0 +1,744 @@
+{
+	"info": {
+		"_postman_id": "d7569101-1c62-4c51-9422-a7be9caafbe6",
+		"name": "CBC-Storage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33173724"
+	},
+	"item": [
+		{
+			"name": "empleado",
+			"item": [
+				{
+					"name": "Agregar Empleado",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombres",
+									"value": "Pablo Antonio",
+									"type": "text"
+								},
+								{
+									"key": "apellidos",
+									"value": "Perez",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "pablo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "48562010",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/agregarEmpleado"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Empleados",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "http://localhost:2880/mostrarEmpleados"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Empleado",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "telefono",
+									"value": "48562301",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/actualizarEmpleado/66cf48422380a3bb2c488238"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Empleado",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/eliminarEmpleado/66cf47da2380a3bb2c488233"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Empleado",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "Luis",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/buscarEmpleado"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "categoría",
+			"item": [
+				{
+					"name": "Agregar Categoría",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "categoria",
+									"value": "No Eléctricos",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/agregarCategoria"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Categorías",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/mostrarCategorias"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Categoría",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "categoria",
+									"value": "Pequeños",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/actualizarCategoria/66cf5c4f4de6a2a4f2a1c74f"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Categoría",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/eliminarCategoria/66cf5c4f4de6a2a4f2a1c74f"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Categoría",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "Electricos",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/buscarCategoria"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ubicacion",
+			"item": [
+				{
+					"name": "Agregar Ubicación",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ubicacion",
+									"value": "Esquina abajo",
+									"type": "text"
+								},
+								{
+									"key": "capacidad",
+									"value": "15",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/agregarUbicacion"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Ubicaciones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/mostrarUbicaciones"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Ubicacion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ubicacion",
+									"value": "Esquina derecha",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/actualizarUbicacion/66d0d4e1c41a747603f5ab7f"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Ubicación",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/eliminarUbicacion/66d0d4e1c41a747603f5ab7f"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Ubicación",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "arriba",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/buscarUbicacion"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "herramienta",
+			"item": [
+				{
+					"name": "Agregar Herramienta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "SKU",
+									"value": "dsa-dsa-dsa",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Martillo",
+									"type": "text"
+								},
+								{
+									"key": "marca",
+									"value": "dell",
+									"type": "text"
+								},
+								{
+									"key": "modelo",
+									"value": "135ds",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "categoria",
+									"value": "66cf5c144de6a2a4f2a1c74c",
+									"type": "text"
+								},
+								{
+									"key": "ubicacion",
+									"value": "66d0d56dc896dd9e4a97667d",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/agregarHerramienta"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Herramientas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/mostrarHerramientas"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Herramienta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "computadora",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/actualizarHerramienta/66d201dee4369fa167846d9b"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Ubicación",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/eliminarHerramienta/66d1f07b005c2ba8bad52e82"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Herramienta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "a",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/buscarHerramienta"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "prestamo",
+			"item": [
+				{
+					"name": "Agregar Préstamo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "herramienta",
+									"value": "66d20c40399d62c69bd09318",
+									"type": "text"
+								},
+								{
+									"key": "cantidadHerramientas",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "empleado",
+									"value": "66cf485c2380a3bb2c48823c",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/agregarPrestamo"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Préstamos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:2880/mostrarPrestamos"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Préstamo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "estado",
+									"value": "DEVUELTO",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/actualizarPrestamo/66d5cdf392935f7bec593ef0"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Préstamo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MjI0NWFiM2ViZTA3MTg4ZWFkNzgiLCJ1c3VhcmlvIjoibHVpcyIsIm5vbWJyZXMiOiJsdWlzIiwiYXBlbGxpZG9zIjoiQWd1aWxhciIsImlhdCI6MTcyNTMwOTUzMSwiZXhwIjoxNzI1MzIwMzMxfQ.UhCcI_vcFy4WjjjAihM9XLsG7JDuLASzpb6SHj7CvS0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:2880/eliminarPrestamo/66d5e00061a7340cf58fc8e8"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "Registrarse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombres",
+									"value": "luis",
+									"type": "text"
+								},
+								{
+									"key": "apellidos",
+									"value": "Aguilar",
+									"type": "text"
+								},
+								{
+									"key": "usuario",
+									"value": "luis",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "luis@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "contrasena",
+									"value": "dsa4&fdS",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "41256980",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/registrar"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "usuario",
+									"value": "luis",
+									"type": "text"
+								},
+								{
+									"key": "contrasena",
+									"value": "dsa4&fdS",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/login"
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MDFlOTVhNTAxMjk1NDkyNWQyYjkiLCJ1c3VhcmlvIjoibWFsZG9uYWRvIiwibm9tYnJlcyI6Ik1hbGRvbnkiLCJhcGVsbGlkb3MiOiJBZ3VpbGFyIiwiaWF0IjoxNzI1MzA2NDAyLCJleHAiOjE3MjUzMTcyMDJ9.DKhHEm4Fy1pPFNMNVNI5RIoEYiGaselcJx8qxjNjcy0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "search",
+									"value": "Maldony",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/buscarAdmin"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Mi Perfil",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MDFlOTVhNTAxMjk1NDkyNWQyYjkiLCJ1c3VhcmlvIjoibWFsZG9uYWRvIiwibm9tYnJlcyI6Ik1hbGRvbnkiLCJhcGVsbGlkb3MiOiJBZ3VpbGFyIiwiaWF0IjoxNzI1MzA2NDAyLCJleHAiOjE3MjUzMTcyMDJ9.DKhHEm4Fy1pPFNMNVNI5RIoEYiGaselcJx8qxjNjcy0"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "contrasena",
+									"value": "Jam3sfd$",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:2880/actualizarMiPerfil/66d601e95a5012954925d2b9"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Mi Perfil",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NmQ2MDFlOTVhNTAxMjk1NDkyNWQyYjkiLCJ1c3VhcmlvIjoibWFsZG9uYWRvIiwibm9tYnJlcyI6Ik1hbGRvbnkiLCJhcGVsbGlkb3MiOiJBZ3VpbGFyIiwiaWF0IjoxNzI1MzA2NDAyLCJleHAiOjE3MjUzMTcyMDJ9.DKhHEm4Fy1pPFNMNVNI5RIoEYiGaselcJx8qxjNjcy0"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "http://localhost:2880/eliminarMiPerfil/66d601e95a5012954925d2b9"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

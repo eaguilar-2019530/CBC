@@ -1,0 +1,133 @@
+.tituloHerramienta {
+    font-family: "Sofia Sans Semi Condensed", sans-serif;
+    font-size: 300%;
+    text-align: center;
+}
+
+.titulosTabla {
+    text-align: center;
+}
+
+/*---- CONTENEDOR PRINCIPAL HERRAMIENTA ----*/
+.contenedorPrincipalHe {
+    width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*---- CONTENEDOR HERRAMIENTA ----*/
+.contenedorHerramienta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.espacioAbajo {
+    margin-bottom: 15px;
+    /* Espacio de 10 píxeles debajo del input */
+}
+
+/*--- ESTILO DE LOS BOTONES ---*/
+.botonUnoH {
+    --bg: #27ae60;
+    --text-color: #fff;
+    position: relative;
+    width: 150px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #1e8449 0px 7px 2px, #000 0px 8px 5px;
+    margin-right: 35px;
+}
+
+.botonUnoH:hover {
+    opacity: 1;
+}
+
+.botonUnoH:active {
+    top: 4px;
+    box-shadow: #1e8449 0px 3px 2px, #000 0px 3px 5px;
+}
+
+/*-- Boton Dos ---*/
+.botonDosH {
+    --bg: #e74c3c;
+    --text-color: #fff;
+    position: relative;
+    width: 150px;
+    border: none;
+    background: var(--bg);
+    color: var(--text-color);
+    padding: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 5px;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+}
+
+.botonDosH:hover {
+    opacity: 1;
+}
+
+.botonDosH:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px, #000 0px 3px 5px;
+}
+
+.contenedorBotones {
+    display: flex;
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    margin-top: 20px;
+    /* Espacio opcional entre el contenedor y los botones */
+}
+
+/*--- Columnas para los inputs ---*/
+.divInputH input {  
+    width: 300px;
+    margin-bottom: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna {
+    flex: 1;
+    margin-right: 10px; /* Espacio entre las columnas */
+}
+
+.columna:last-child {
+    margin-right: 0;
+}
+
+.select-pequeño {
+    padding: 5px 10px;      /* Espaciado interior */
+    box-sizing: border-box;  /* Incluye padding en el ancho total */
+    margin-bottom: 15px;
+    margin-top: 6px; 
+}
+
+.select-pequeñoD {
+    width: 450;            /* Ancho específico */
+    padding: 5px 10px;      /* Espaciado interior */
+    box-sizing: border-box;  /* Incluye padding en el ancho total */
+}
